@@ -41,7 +41,6 @@ class CoinManager {
     }
 }
 
-//MARK: - CoinManagerDelegate
 protocol CoinManagerDelegate {
     func didUpdatePrice(price: String, currency: String)
     func didFailWithError(error: Error)
