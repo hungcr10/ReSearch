@@ -203,6 +203,7 @@
                         <outlet property="currentcyLabel" destination="t4l-Rw-RAn" id="9kc-ev-fc2"/>
                         <outlet property="currentcyPicker" destination="5aL-18-IYt" id="dft-0b-PR3"/>
                         <outlet property="mainSlider" destination="Dae-qg-loZ" id="Qtx-J7-SEc"/>
+                        <outlet property="segmentedControl" destination="2gt-8c-pJW" id="VTK-jS-0VN"/>
                         <outlet property="valueLabel" destination="Tur-Rm-TTw" id="11z-GW-Oh6"/>
                     </connections>
                 </viewController>

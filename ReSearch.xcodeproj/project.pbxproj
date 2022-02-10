@@ -100,8 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				3DCB238627B4D1B800712964 /* AppDelegate */,
-				3DCB238927B4D1F400712964 /* LifeCycle */,
-				3DCB238C27B4D41700712964 /* UIComponent */,
+				3DCB239027B4DA3300712964 /* Model */,
+				3DCB239227B4DAB400712964 /* Networking */,
+				3DCB238F27B4DA1700712964 /* Scenes */,
 				3DCB238A27B4D2C100712964 /* Main.storyboard */,
 				3DCB235F27B4D19F00712964 /* Assets.xcassets */,
 				3DCB236127B4D19F00712964 /* LaunchScreen.storyboard */,
@@ -131,9 +132,7 @@
 		3DCB238C27B4D41700712964 /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
-				3DCB239227B4DAB400712964 /* Networking */,
-				3DCB239027B4DA3300712964 /* CoinModel */,
-				3DCB238F27B4DA1700712964 /* Scenes */,
+				3DCB239127B4DA6A00712964 /* CoinViewController */,
 			);
 			path = UIComponent;
 			sourceTree = "<group>";
@@ -141,17 +140,18 @@
 		3DCB238F27B4DA1700712964 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				3DCB239127B4DA6A00712964 /* CoinViewController */,
+				3DCB238927B4D1F400712964 /* LifeCycle */,
+				3DCB238C27B4D41700712964 /* UIComponent */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		3DCB239027B4DA3300712964 /* CoinModel */ = {
+		3DCB239027B4DA3300712964 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				3DCB239327B4DACD00712964 /* CoinModel.swift */,
 			);
-			path = CoinModel;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		3DCB239127B4DA6A00712964 /* CoinViewController */ = {

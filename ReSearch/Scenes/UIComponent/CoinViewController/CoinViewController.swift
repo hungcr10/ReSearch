@@ -12,10 +12,17 @@ class CoinViewController: UIViewController {
 extension CoinViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemMint
+        setUpViewController()
+    }
+}
+//MARK: -Helper
+extension CoinViewController {
+    private func setUpViewController() {
         currentcyPicker.dataSource = self
         currentcyPicker.delegate = self
         CoinManager.coinManger.delegate = self
+        view.backgroundColor = .systemMint
+
     }
 }
 //MARK: - Action
@@ -48,7 +55,7 @@ extension CoinViewController: CoinManagerDelegate {
     }
 }
 
-//MARK: - Datasource
+//MARK: - UIPickerViewDataSource
 extension CoinViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -63,7 +70,7 @@ extension CoinViewController: UIPickerViewDataSource {
     }
 }
 
-//MARK: - Delegate
+//MARK: - UIPickerViewDelegate
 extension CoinViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let seclectCurrency = CoinManager.coinManger.currencyArray[row]
