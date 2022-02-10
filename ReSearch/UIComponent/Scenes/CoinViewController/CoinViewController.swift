@@ -12,6 +12,7 @@ class CoinViewController: UIViewController {
 extension CoinViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemMint
         currentcyPicker.dataSource = self
         currentcyPicker.delegate = self
         CoinManager.coinManger.delegate = self
@@ -23,6 +24,15 @@ extension CoinViewController {
         let currentValue = Int(mainSlider.value)
         valueLabel.text = "\(currentValue)"
     }
+    @IBAction func segmentedControl(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            view.backgroundColor = .systemMint
+        }
+        else {
+            view.backgroundColor = .systemPink
+        }
+    }
+   
 }
 //MARK: - CoinManagerDelegate
 extension CoinViewController: CoinManagerDelegate {

@@ -150,6 +150,9 @@
                                 </segments>
                                 <color key="tintColor" systemColor="tintColor"/>
                                 <color key="selectedSegmentTintColor" systemColor="systemOrangeColor"/>
+                                <connections>
+                                    <action selector="segmentedControl:" destination="XMD-ej-Mpz" eventType="valueChanged" id="NmE-V6-aVl"/>
+                                </connections>
                             </segmentedControl>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ft6-bS-ku4">
                                 <rect key="frame" x="101" y="606" width="212.5" height="30"/>
@@ -200,7 +203,6 @@
                         <outlet property="currentcyLabel" destination="t4l-Rw-RAn" id="9kc-ev-fc2"/>
                         <outlet property="currentcyPicker" destination="5aL-18-IYt" id="dft-0b-PR3"/>
                         <outlet property="mainSlider" destination="Dae-qg-loZ" id="Qtx-J7-SEc"/>
-                        <outlet property="segmentedControl" destination="2gt-8c-pJW" id="iWd-fr-bu0"/>
                         <outlet property="valueLabel" destination="Tur-Rm-TTw" id="11z-GW-Oh6"/>
                     </connections>
                 </viewController>
