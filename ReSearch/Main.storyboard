@@ -46,6 +46,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rlN-y6-4BS">
+                                <rect key="frame" x="157" y="218" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="XaO-J1-cPA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -57,7 +65,9 @@
                             <constraint firstItem="28m-dx-lW7" firstAttribute="top" secondItem="RKY-UC-30O" secondAttribute="bottom" constant="10" id="Rke-As-njf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gD4-a5-Qkp" secondAttribute="trailing" id="TuM-yz-Agg"/>
                             <constraint firstItem="RKY-UC-30O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UcX-I4-ESL"/>
+                            <constraint firstItem="rlN-y6-4BS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aIv-hP-aGa"/>
                             <constraint firstItem="xvn-LS-iuH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qhE-F2-dyQ"/>
+                            <constraint firstItem="rlN-y6-4BS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="rIK-y9-NfN"/>
                             <constraint firstItem="RKY-UC-30O" firstAttribute="top" secondItem="xvn-LS-iuH" secondAttribute="bottom" constant="40" id="rvR-Eq-qc2"/>
                             <constraint firstItem="gD4-a5-Qkp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yKd-xD-yhU"/>
                         </constraints>
@@ -66,6 +76,7 @@
                     <connections>
                         <outlet property="mainImage" destination="gD4-a5-Qkp" id="2GT-Sk-Sug"/>
                         <outlet property="mainLabel" destination="28m-dx-lW7" id="OtN-U8-Qhr"/>
+                        <outlet property="mainTextField" destination="rlN-y6-4BS" id="ZpI-bR-HiI"/>
                         <segue destination="Nkj-rl-eEg" kind="push" identifier="SecondView" id="sQC-vi-CwZ"/>
                     </connections>
                 </viewController>

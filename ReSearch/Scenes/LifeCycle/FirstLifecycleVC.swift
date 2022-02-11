@@ -10,6 +10,7 @@ import UIKit
 class FirstLifecycleVC: UIViewController {
     @IBOutlet weak var mainImage: UIImageView!
     @IBOutlet weak var mainLabel: UILabel!
+    @IBOutlet weak var mainTextField: UITextField!
     private let name = "Nguyen Dao Hung"
     //MARK: - LifeCycle
     override func loadView() {
@@ -27,6 +28,8 @@ class FirstLifecycleVC: UIViewController {
         mainImage.image = UIImage(systemName: "terminal")
         view.backgroundColor = .systemGray
         mainLabel.text = name
+        mainTextField.text = name
+        //mainTextField.delegate = self
         print("ViewDidLoad")
         
     }
@@ -73,8 +76,10 @@ class FirstLifecycleVC: UIViewController {
     }
     //MARK: - Pass Variable
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! SecondLifecycleVc
-        vc.name = name
+        if let vc = segue.destination as? SecondLifecycleVc {
+            vc.name = name
+
+        }
 
     }
     //MARK: - Action

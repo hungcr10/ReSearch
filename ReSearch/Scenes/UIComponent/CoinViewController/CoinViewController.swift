@@ -6,6 +6,7 @@ class CoinViewController: UIViewController {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var mainSlider: UISlider!
     @IBOutlet weak var valueLabel: UILabel!
+    //uisearchbar, ui textview...
 }
 
 //MARK: -Life Cycle
