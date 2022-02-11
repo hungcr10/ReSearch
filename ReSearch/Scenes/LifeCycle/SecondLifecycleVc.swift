@@ -1,5 +1,8 @@
 import UIKit
 class SecondLifecycleVc: UIViewController {
+    @IBOutlet weak var mainLabel: UILabel!
+    var name: String = ""
+    //MARK: - Life cycle
     override func loadViewIfNeeded() {
         super.loadViewIfNeeded()
         print("SecondView: loadviewifneed")
@@ -8,6 +11,7 @@ class SecondLifecycleVc: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("SecondView: ViewDidLoad")
+        mainLabel.text = name
 
     }
     override func viewWillAppear(_ animated: Bool) {

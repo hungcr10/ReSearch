@@ -40,13 +40,21 @@
                                     <action selector="nextToSecondLifecycleVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ef-zH-iSK"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28m-dx-lW7">
+                                <rect key="frame" x="186" y="752" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="gD4-a5-Qkp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8ZX-BF-jWC"/>
+                            <constraint firstItem="28m-dx-lW7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IkI-lR-fZr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gD4-a5-Qkp" secondAttribute="bottom" id="N9r-op-9FN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RKY-UC-30O" secondAttribute="bottom" constant="120" id="NJn-8O-5tf"/>
+                            <constraint firstItem="28m-dx-lW7" firstAttribute="top" secondItem="RKY-UC-30O" secondAttribute="bottom" constant="10" id="Rke-As-njf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gD4-a5-Qkp" secondAttribute="trailing" id="TuM-yz-Agg"/>
                             <constraint firstItem="RKY-UC-30O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UcX-I4-ESL"/>
                             <constraint firstItem="xvn-LS-iuH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qhE-F2-dyQ"/>
@@ -57,6 +65,7 @@
                     <navigationItem key="navigationItem" id="96S-Q0-SEj"/>
                     <connections>
                         <outlet property="mainImage" destination="gD4-a5-Qkp" id="2GT-Sk-Sug"/>
+                        <outlet property="mainLabel" destination="28m-dx-lW7" id="OtN-U8-Qhr"/>
                         <segue destination="Nkj-rl-eEg" kind="push" identifier="SecondView" id="sQC-vi-CwZ"/>
                     </connections>
                 </viewController>
@@ -222,17 +231,28 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FEF-Bv-VhA">
                                 <rect key="frame" x="0.0" y="88.5" width="414" height="773"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXl-ar-HHl">
+                                <rect key="frame" x="186" y="761" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RhX-z5-w71"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="FEF-Bv-VhA" firstAttribute="leading" secondItem="RhX-z5-w71" secondAttribute="leading" id="0ku-tw-8Ra"/>
                             <constraint firstItem="RhX-z5-w71" firstAttribute="trailing" secondItem="FEF-Bv-VhA" secondAttribute="trailing" id="4kD-Ei-8jr"/>
+                            <constraint firstItem="RhX-z5-w71" firstAttribute="bottom" secondItem="SXl-ar-HHl" secondAttribute="bottom" constant="80" id="I4Z-zJ-Rsj"/>
+                            <constraint firstItem="SXl-ar-HHl" firstAttribute="centerX" secondItem="Mgg-rR-Hie" secondAttribute="centerX" id="bxA-Qq-Xak"/>
                             <constraint firstItem="FEF-Bv-VhA" firstAttribute="top" secondItem="RhX-z5-w71" secondAttribute="top" id="fAr-MS-n1r"/>
                             <constraint firstItem="RhX-z5-w71" firstAttribute="bottom" secondItem="FEF-Bv-VhA" secondAttribute="bottom" id="oUC-Sa-pGU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iu4-OU-RCz"/>
+                    <connections>
+                        <outlet property="mainLabel" destination="SXl-ar-HHl" id="qsE-CC-33y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k3z-xa-Sfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

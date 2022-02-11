@@ -9,7 +9,8 @@ import UIKit
 
 class FirstLifecycleVC: UIViewController {
     @IBOutlet weak var mainImage: UIImageView!
-    
+    @IBOutlet weak var mainLabel: UILabel!
+    let name = "Nguyen Dao Hung"
     //MARK: - LifeCycle
     override func loadView() {
         super.loadView()
@@ -25,6 +26,7 @@ class FirstLifecycleVC: UIViewController {
         super.viewDidLoad()
         mainImage.image = UIImage(systemName: "terminal")
         view.backgroundColor = .systemGray
+        mainLabel.text = name
         print("ViewDidLoad")
         
     }
@@ -69,7 +71,11 @@ class FirstLifecycleVC: UIViewController {
         super.didReceiveMemoryWarning()
         print("didReceiveMemoryWarning")
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! SecondLifecycleVc
+        vc.name = name
+
+    }
     //MARK: - Action
     @IBAction func nextToSecondLifecycleVC(_ sender: Any) {
         self.performSegue(withIdentifier: "SecondView", sender: nil)
