@@ -10,7 +10,7 @@ import UIKit
 class FirstLifecycleVC: UIViewController {
     @IBOutlet weak var mainImage: UIImageView!
     @IBOutlet weak var mainLabel: UILabel!
-    let name = "Nguyen Dao Hung"
+    private let name = "Nguyen Dao Hung"
     //MARK: - LifeCycle
     override func loadView() {
         super.loadView()
@@ -71,6 +71,7 @@ class FirstLifecycleVC: UIViewController {
         super.didReceiveMemoryWarning()
         print("didReceiveMemoryWarning")
     }
+    //MARK: - Pass Variable
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! SecondLifecycleVc
         vc.name = name
