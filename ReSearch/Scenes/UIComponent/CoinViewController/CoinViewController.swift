@@ -42,6 +42,7 @@ extension CoinViewController {
     }
    
 }
+
 //MARK: - CoinManagerDelegate
 extension CoinViewController: CoinManagerDelegate {
     func didFailWithError(error: Error) {
